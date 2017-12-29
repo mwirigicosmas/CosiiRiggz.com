@@ -1,0 +1,815 @@
+// single line comments in sass below multiple line comments
+//$generalfont:font-size 72px, font-weight 700
+/*
+ *
+ */
+$accent-bold: #c99065
+$accent-light : #e1c184
+$bgcolor: #85af4b
+
+body
+ margin: 0 auto
+ font-family: 'Open Sans', sans-serif
+
+h3
+  color: $accent-light
+  text-align: center
+  padding: 100px 0 30px 0
+  margin: 0 auto
+
+// ----------------------------------- HEADER SECTION ----------------------------------------//
+
+header
+  height: 500px
+  background: url("../images/sho-hatakeyama-117306.jpg")  center center
+  background-size: cover
+  width: 100%
+
+  .logo
+    float: left
+    height: 50px
+    width: 50px
+    margin: 20px 0 0 30px
+
+    img
+      background-size: cover
+      height: 50px
+      width: 50px
+      border-radius: 50%
+      opacity: 0.4
+
+  nav
+    float: right
+    margin: 30px 30px 0 0
+
+    li
+      list-style: none
+      display: inline-block
+
+    a
+      margin-left: 20px
+      color: rgba(0,0,0,0.5)
+      font-size: 20px
+      font-weight: 700
+      text-transform: uppercase
+      text-decoration: none
+      &:hover
+        color: rgba(0,0,0,1)
+
+  h1
+    text-align: center
+    font-size: 72px
+    font-weight: 700
+    color: white
+    text-transform: uppercase
+    letter-spacing: 0.05em
+    margin-bottom: 20px
+    clear: both
+    padding-top: 100px
+
+    span
+      display: inline-block
+      padding: 0.2em 0.5em
+      border: white 10px solid
+
+  .kicker
+    text-align: center
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 0.5em
+    color: white
+    line-height: 1
+
+// ----------------------------------- ABOUT SECTION ----------------------------------------//
+
+.face-lockup
+  display: flex
+  max-width: 780px
+  margin: 0 auto
+  align-items: center
+  justify-content: space-between
+
+  .face-image
+    height: 200px
+    width: 200px
+    border-radius: 50%
+    background: url("../images/29.jpg")
+    background-size: cover
+    order: 3
+
+  i
+    font-size: 60px
+    color: $bgcolor
+
+  #pencil
+    order: 1
+  #video
+    order: 2
+  #mouse
+    order: 4
+  #chrome
+    order: 5
+
+
+.about-blurb
+  max-width: 620px
+  padding: 15px
+  margin: 0 auto
+  font-size: 24px
+  text-align: center
+  font-weight: 300
+
+  p
+    margin: 0 auto
+
+
+.skill-lockup
+  max-width: 540px
+  margin: 50px auto
+  color: #999999
+  &:after
+    content: ''
+    display: block
+    clear: both
+
+  .skill-unit
+    width: 270px
+    float: left
+
+    .skill-icons
+      font-size: 0
+      margin: 2px 0 30px 0
+      span
+        display: inline-block
+        height: 14px
+        width: 14px
+        background-color: $accent-bold
+        margin-right: 5px
+        border-radius: 50%
+
+        &:after
+          content: ''
+          display: block
+          height: 10px
+          width: 10px
+          background: #ffffff
+          border-radius: 50%
+          margin: 2px
+
+      @for $i from 1 through 10
+        &.skill-#{$i} span:nth-child(n+#{$i})
+          @extend %skill-color
+
+
+@media screen and (max-width: 556px)
+  .skill-lockup
+    width: 270px
+
+
+%skill-color
+  background: #e5eaee
+
+// ----------------------------------- WORK SECTION ----------------------------------------//
+
+.alt-section
+  background-color:  #e5eaee
+  padding-bottom: 50px
+
+
+.section-work
+  overflow-x: hidden
+
+.work-belt
+  width: 200%
+  position: relative
+  left: 0
+  transition: all
+  transition-duration: 800ms
+
+
+.thumb-wrap, .work-wrap
+  width: 50%
+  float: left
+
+
+.thumb-container
+  max-width: 960px
+  margin: 0 auto
+
+  &:after
+    content: ''
+    display: block
+    clear: both
+
+
+
+  .thumb-unit-1
+    display: block
+    width: 25%
+    float: left
+    position: relative
+    padding-top: 16%
+    overflow: hidden
+    cursor: pointer
+
+    background:
+      image: url("../images/work/ALTN8.png")
+      size: cover
+      repeat: no-repeat
+      position: center center
+
+
+    .thumb-overlay
+      top: 100%
+      height: 100%
+      width: 100%
+      position: absolute
+      text-align: center
+      justify-content: space-around
+      background: fade_out(black, 0.9)
+
+      strong
+        display: block
+        color: black
+        font-weight: 900
+        text-transform: uppercase
+        font-size: 20px
+        line-height: 1.2
+
+    &:hover  .thumb-overlay
+      top: 0
+      transition: 1000ms ease-in
+
+  .thumb-unit-2
+    display: block
+    width: 25%
+    float: left
+    position: relative
+    padding-top: 16%
+    overflow: hidden
+    cursor: pointer
+
+    background:
+      image: url("../images/work/singplus.png")
+      size: cover
+      position: center center
+      repeat: no-repeat
+
+    .thumb-overlay
+      top: 100%
+      height: 100%
+      width: 100%
+      position: absolute
+      text-align: center
+      overflow: hidden
+      justify-content: space-around
+      background: fade_out(black, 0.9)
+
+      strong
+        display: block
+        color: black
+        font-weight: 900
+        text-transform: uppercase
+        font-size: 20px
+        line-height: 1.2
+
+    &:hover  .thumb-overlay
+      top: 0%
+      transition: 1000ms ease-in
+  .thumb-unit-3
+    display: block
+    width: 25%
+    float: left
+    position: relative
+    padding-top: 16%
+    overflow: hidden
+    cursor: pointer
+
+    background:
+      image: url("../images/work/batanyeri.jpg")
+      size: cover
+      position: center center
+      repeat: no-repeat
+
+    .thumb-overlay
+      top: 100%
+      height: 100%
+      width: 100%
+      position: absolute
+      text-align: center
+      overflow: hidden
+      justify-content: space-around
+      background: fade_out(black, 0.9)
+
+      strong
+        display: block
+        color: black
+        font-weight: 900
+        text-transform: uppercase
+        font-size: 20px
+        line-height: 1.2
+
+    &:hover  .thumb-overlay
+      top: 0%
+      transition: 1000ms ease-in
+  .thumb-unit-4
+    display: block
+    width: 25%
+    float: left
+    position: relative
+    padding-top: 16%
+    overflow: hidden
+    cursor: pointer
+
+    background:
+      image: url("../images/work/pph.jpg")
+      size: cover
+      position: center center
+      repeat: no-repeat
+
+    .thumb-overlay
+      top: 100%
+      height: 100%
+      width: 100%
+      position: absolute
+      text-align: center
+      overflow: hidden
+      justify-content: space-around
+      background: fade_out(black, 0.9)
+
+      strong
+        display: block
+        color: black
+        font-weight: 900
+        text-transform: uppercase
+        font-size: 20px
+        line-height: 1.2
+
+    &:hover  .thumb-overlay
+      top: 0%
+      transition: 1000ms ease-in
+  .thumb-unit-5
+    display: block
+    width: 25%
+    float: left
+    position: relative
+    padding-top: 16%
+    overflow: hidden
+    cursor: pointer
+
+    background:
+      image: url("../images/work/dkut.jpeg")
+      size: cover
+      position: center center
+      repeat: no-repeat
+
+    .thumb-overlay
+      top: 100%
+      height: 100%
+      width: 100%
+      position: absolute
+      text-align: center
+      overflow: hidden
+      justify-content: space-around
+      background: fade_out(black, 0.9)
+
+      strong
+        display: block
+        color: black
+        font-weight: 900
+        text-transform: uppercase
+        font-size: 20px
+        line-height: 1.2
+
+    &:hover  .thumb-overlay
+      top: 0%
+      transition: 1000ms ease-in
+  .thumb-unit-6
+    display: block
+    width: 25%
+    float: left
+    position: relative
+    padding-top: 16%
+    overflow: hidden
+    cursor: pointer
+
+    background:
+      image: url("../images/work/meruschool.png")
+      size: cover
+      position: center center
+      repeat: no-repeat
+
+    .thumb-overlay
+      top: 100%
+      height: 100%
+      width: 100%
+      position: absolute
+      text-align: center
+      overflow: hidden
+      justify-content: space-around
+      background: fade_out(black, 0.9)
+
+      strong
+        display: block
+        color: black
+        font-weight: 900
+        text-transform: uppercase
+        font-size: 20px
+        line-height: 1.2
+
+    &:hover  .thumb-overlay
+      top: 0%
+      transition: 1000ms ease-in
+  .thumb-unit-7
+    display: block
+    width: 25%
+    float: left
+    position: relative
+    padding-top: 16%
+    overflow: hidden
+    cursor: pointer
+    background:
+      image: url("../images/work/freecodecamp.jpeg")
+      size: cover
+      position: center center
+      repeat: no-repeat
+
+    .thumb-overlay
+      top: 100%
+      height: 100%
+      width: 100%
+      position: absolute
+      text-align: center
+      overflow: hidden
+      justify-content: space-around
+      background: fade_out(black, 0.9)
+
+      strong
+        display: block
+        color: black
+        font-weight: 900
+        text-transform: uppercase
+        font-size: 20px
+        line-height: 1.2
+
+    &:hover  .thumb-overlay
+      top: 0%
+      transition: 1000ms ease-in
+  .thumb-unit-8
+    display: block
+    width: 25%
+    float: left
+    position: relative
+    padding-top: 16%
+    overflow: hidden
+    cursor: pointer
+    background:
+      image: url("../images/work/etihadcargo.jpg")
+      size: cover
+      position: center center
+      repeat: no-repeat
+
+    .thumb-overlay
+      top: 100%
+      height: 100%
+      width: 100%
+      position: absolute
+      text-align: center
+      overflow: hidden
+      justify-content: space-around
+      background: fade_out(black, 0.9)
+
+      strong
+        display: block
+        color: black
+        font-weight: 900
+        text-transform: uppercase
+        font-size: 20px
+        line-height: 1.2
+
+    &:hover  .thumb-overlay
+      top: 0%
+      transition: 1000ms ease-in
+
+
+
+
+.work-container
+  max-width: 600px
+  margin: 0 auto
+  display: none
+
+  h4
+    color: $accent-bold
+    font-weight: 300
+    text-transform: uppercase
+    font-size: 24px
+    line-height: 1.2
+    margin: 0 0 0 60px
+
+
+  .work-return
+    height: 40px
+    width: 40px
+    cursor: pointer
+    opacity: 0.5
+    position: absolute
+
+
+
+    &:hover
+      opacity: 1
+
+  img
+    max-width: 100%
+
+
+@media (max-width: 740px)
+
+  .work-container
+
+    .work-return
+      left: 0
+  h4
+     margin-left: 60px
+
+
+// ----------------------------------- CLIENTS SECTION ----------------------------------------//
+
+.clients-section
+  position: relative
+
+.clients-belt
+  width: 100%
+  position: relative
+
+  .client-unit
+    max-width: 750px
+    margin: 0 0 50px -375px
+    position: relative
+    top: 0
+    left: 50%
+    display: flex
+
+    img
+      max-width: 100px
+      border-radius: 50%
+
+    .client-face
+      min-width: 300px
+      text-align: center
+
+      .client-name
+        display: block
+        text-transform: uppercase
+        font-weight: 400
+        letter-spacing: 1px
+
+      .client-title
+        font-style: normal
+        font-size: 20px
+        color: #999999
+
+    .client-content
+      font-size: 18px
+      line-height: 36px
+      font-weight: 300
+      margin-top: -30px
+      position: relative
+
+  .clients-logos
+    position: relative
+    max-width: 750px
+    margin: 0 auto 100px
+    align-items: center
+    justify-content: space-around
+
+    .clients-logo
+
+      height: 80px
+      min-width: 200px
+      background:
+        image: url("../images/clients/1.jpg")
+        size: contain
+        position: center
+        repeat: no-repeat
+      cursor: pointer
+      margin: 400px 10px
+
+      &.active-client
+      box-shadow: 0 4px 0 $accent-bold
+
+  .client-quote-mark
+    position: absolute
+    top: 0
+    left: 0
+    height: 60px
+    width: 60px
+    opacity: 0.3
+    z-index: -1
+
+    i
+      color: $accent-bold
+      font-size: 24px
+
+
+.client-controls
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+
+    .client-control-next
+      position: absolute
+      top: 50%
+      right: 5%
+
+      i
+        font-size: 30px
+        color: $accent-bold
+
+    .client-control-prev
+      position: absolute
+      top: 50%
+      left: 5%
+      i
+        font-size: 30px
+        color: $accent-bold
+
+
+// ----------------------------------- CONTACT SECTION ----------------------------------------//
+.section-contacts
+  background: #7d8dad
+  .social-links
+    display: flex
+    max-width: 700px
+    margin: 0 auto 50px
+    justify-content: space-around
+    opacity: 0.5
+    &:hover
+      opacity: 1
+
+    a
+
+      i
+        display: block
+        font-size: 38px
+        line-height: 50px
+        border-radius: 50%
+        color: black
+        &:hover
+          opacity: 1
+
+  .bar
+    width: 250px
+    height: 0
+    border-top: 4px solid $bgcolor
+
+    margin: 0 auto 100px
+
+  .big-link
+    display: block
+    text-align: center
+    font-size: 72px
+    font-weight: 300
+    padding: 0 0 50px 0
+    opacity: 0.5
+
+    &:hover
+      opacity: 1
+
+    a
+      color: black
+      text-decoration: none
+
+
+
+form
+  max-width: 450px
+  margin: 0 auto 50px
+
+  input
+    height: 3em
+
+  input, textarea
+    font-size: 20px
+    border: 3px solid $accent-bold
+    width: 100%
+    border-radius: 20px
+    text-align: center
+    &:focus
+      outline: none
+      border-color: #e1c184
+  textarea
+    height: 10em
+
+    &:focus
+      outline: none
+      border-color: #e1c184
+
+  .contact-info-group
+
+    label
+      width: 50%
+      float: left
+
+  label
+    display: block
+    margin-bottom: 20px
+    padding-top: 30px
+
+    span
+      dispaly: block
+
+  .submit-wrap
+
+  [type="submit"]
+    background: $accent-bold
+    color: #e5eaee
+    font-size: 18px
+    text-transform: uppercase
+    width: 30%
+
+    &:hover
+      background: $accent-light
+      cursor: pointer
+
+// ----------------------------------- FOOTER SECTION ----------------------------------------//
+
+footer
+  background: url("../images/sho-hatakeyama-117306.jpg")  center center
+  background-size: cover
+
+  .lockup
+    padding: 30px 30px 70px 30px
+
+    .logo
+      height: 50px
+      width: 50px
+      float: left
+
+      img
+        background-size: cover
+        height: 50px
+        width: 50px
+        border-radius: 50%
+        opacity: 0.4
+
+  nav
+    padding: 10px
+
+    li
+      list-style: none
+      display: inline-block
+
+      a
+        text-decoration: none
+        margin-left: 20px
+        color: rgba(0,0,0,0.5)
+        font-size: 20px
+        font-weight: 700
+        text-transform: uppercase
+        &:hover
+          color: rgba(0,0,0,1)
+
+  .content-wrap
+    float: left
+
+    .copyright
+      margin: 0
+      text-transform: uppercase
+      font-size: 12px
+      color: rgba(0,0,0,0.4)
+
+
+// ----------------------------------- END SECTION ----------------------------------------//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
