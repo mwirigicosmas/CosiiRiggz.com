@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="styles/ionicons.min.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -10,23 +11,50 @@
     <link rel="stylesheet" type="text/css" href="styles/style%20css.css">
     <title>COSII RIGGZ</title>
 </head>
-<body>
+<body class="container">
 <!-------------------------------- HEADER SECTION -------------------------------------------- ---- -->
-<header>
-         <div class="logo"><img src="images/Company_loggo.jpg"></div>
-         <nav>
-                 <li><a href="index.html">Home </a></li>
-                 <li><a href="#about-me" >About </a></li>
-                 <li><a href="#work">GALLERY</a></li>
-                 <li><a href="#contacts">Contacts</a></li>
-                 <li><a href="https://mwirigicosmas.github.io/projects/index.html" target="_blank">Projects</a></li>
-                 <li><a href="https://mwirigicosmas.github.io/CosiiRiggz-Blog/" target="_blank">BLOG</a></li>
-         </nav>
-         <h1><span><b><i>COSII RIGGZ</i></b></span></h1>
+<header class="container">
+    <nav class="navbar navbar-inverse  ">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">COSII RIGGZ</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="index.html">HOME <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#about-me">ABOUT</a></li>
+                    <li><a href="#work">GALLERY</a></li>
+                    <li><a href="#contacts">CONTACTS</a></li>
+                    <li><a href="https://mwirigicosmas.github.io/CosiiRiggz-Blog/" target="_blank">BLOG</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+                        <ul class="dropdown-menu  ">
+                            <li><a href="https://mwirigicosmas.github.io/Bootstrap-cosiiriggz/" target="_blank">Bootstrap Basics</a></li>
+                            <li><a href="https://mwirigicosmas.github.io/CMS-Cosiiriggz/" target="_blank">Bootstrap CMS Template</a></li>
+                            <li><a href="https://mwirigicosmas.github.io/Email-html-css-/" target="_blank">Responsive Email</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#"></a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+         <h1><span><b><i>cosiiriggz</i></b></span></h1>
          <p class="kicker">Thinker // Designer // Developer // Blogger // Investor // Tutor</p>
 </header>
 <!-------------------------------- ABOUT SECTION -------------------------------------------- -->
-<section >
+<section class="container" id="about-cosii"  >
          <h3 id="about-me">About Me</h3>
          <div class="face-lockup">
          <div class="face-image"></div>
@@ -36,7 +64,6 @@
             <div  id="chrome"><i class="ion-cash"></i></div>
          </div>
          <div class="about-blurb">
-
              <p><strong>Cosmas</strong> enjoys building things that are interactive with users and loves working in a
                  team that is collaborative. He's focused on being <strong> EPIC </strong>  in his work meaning he strives
                  to be <strong>excellent</strong>, he is <strong>passionate</strong> of his work, is of high
@@ -100,11 +127,10 @@
                      <span></span> <span></span> <span></span> <span></span> <span></span>
                  </div>
              </div>
-
          </div>
 </section>
 <!-------------------------------- WORK SECTION -------------------------------------------- -->
-<section class="alt-section  section-work">
+<section class="alt-section  section-work container ">
     <h3 id="work">work</h3>
     <div class="work-belt">
        <div class="thumb-wrap">
@@ -180,75 +206,12 @@
                 <div class="work-return"><i class="ion-ios-arrow-back" style="font-size: 30px;" ></i></div>
                 <h4 class="project-title">Work </h4>
                 <div class="project-load"></div>
-                <!--
-                <div style="width: 600px; height: 500px; background: #cccccc; margin-top: 10px"></div>
-                <p>kdhkcjdskjch kdckd cdhsc ldhc ldscv sdcldshcl dsc dslchlsdfhoihdclasnxca c n</p>
-                <div style="width: 600px; height: 500px; background: #cccccc"></div>
-                <p>kdhkcjdskjch kdckd cdhsc ldhc ldscv sdcldshcl dsc dslchlsdfhoihdclasnxca c n</p>
-                <div style="width: 600px; height: 500px; background: #cccccc"></div>
-                <p>kdhkcjdskjch kdckd cdhsc ldhc ldscv sdcldshcl dsc dslchlsdfhoihdclasnxca c n</p>
-                -->
             </div>
         </div>
    </div>
-
-
 </section>
-<!-------------------------------- CLIENTS SECTION -------------------------------------------- -->
-<!--
-<section class="clients-section">
-    <h3 id="my-clients">Clients</h3>
-    <div class="client-controls">
-
-        <div class="client-control-next"><i class="ion-chevron-right"></i></div>
-        <div class="client-control-prev"><i class="ion-chevron-left"></i></div>
-
-    </div>
-    <div class="clients-belt">
-        <div class="client-unit ">
-            <div class="client-face">
-                <img src="images/clients/6.jpg" alt="client-face">
-                <strong class="client-name">Riggz empire</strong>
-                <em class="client-title">CEO</em>
-            </div>
-            <div class="client-content">
-                <div class="client-quote-mark"><i class="ion-quote"></i></div>
-                <p>
-                    <strong>Cosmas enjoys building things </strong>that are interactive with users and loves working in a team
-                    that is collaborative. He's focused on being EPICin his work meaning he strives to be excellent,
-                    he is passionate of his work, is of high integrity and very collaborative with the team
-                </p>
-            </div>
-        </div>
-        <div class="client-unit">
-            <div class="client-face">
-                <img src="images/clients/1.jpg" alt="client-face">
-                <strong class="client-name">Riggz empire</strong>
-                <em class="client-title">CEO</em>
-            </div>
-            <div class="client-content">
-                <div class="client-quote-mark"><i class="ion-quote"></i></div>
-                <p>
-                    <strong>Cosmas enjoys building things </strong>that are interactive with users and loves working in a team
-                    that is collaborative. He's focused on being EPICin his work meaning he strives to be excellent,
-                    he is passionate of his work, is of high integrity and very collaborative with the team
-                </p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="clients-logos">
-        <div class="client-logo "></div>
-        <div class="client-logo"></div>
-        <div class="client-logo"></div>
-        <div class="client-logo"></div>
-    </div>
-  
-</section>
--->
-
 <!-------------------------------- CONTACT SECTION -------------------------------------------- -->
-<section class="section-contacts">
+<section class="section-contacts container ">
     <h3 id="contacts">CONTACTS</h3>
     <div class="social-links">
         <a href="https://www.linkedin.com/in/cosmas-mwirigi-501850115/" target="_blank" ><i class="ion-social-linkedin"></i></a>
@@ -258,28 +221,9 @@
         <a href="tel:+254-715-599-794" ><i class="ion-social-whatsapp"></i></a>
     </div>
     <hr class="bar">
-    <div class="big-link" ><a href="mailto:mwirigicosmas@live.com">mwirigicosmas@live.com</a></div>
-
 </section>
-<!--
-<section>
-    <form action="http://formspree.io/mwirigicosmas@live.com" method="post">
-      <div class="contact-info-group">
-        <label><span>Your name</span></label>
-        <input type="text" name="name" >
-        <label><span>Your email</span></label>
-        <input type="email" name="_replyto" >
-      </div>
-        <label><span>Your idea</span></label>
-        <textarea name="message" ></textarea><br>
-        <div class="submit-wrap">
-          <input type="submit" value="Send">
-        </div>
-    </form>
-</section>
--->
 <!-------------------------------- FOOTER SECTION -------------------------------------------- -->
-<footer>
+<footer class="container" >
          <div class="lockup">
              <div class="logo"><img src="images/Company_loggo.jpg"></div>
              <div class="content-wrap">
@@ -288,15 +232,13 @@
                      <li><a href="#about-me" >About me</a></li>
                      <li><a href="#work">Gallery</a></li>
                      <li><a href="#contacts">Contacts</a></li>
-                     <li><a href="https://mwirigicosmas.github.io/projects/index.html" target="_blank">Projects</a></li>
-                     <li><a href="https://mwirigicosmas.github.io/CosiiRiggz-Blog/" target="_blank" >BLOG</a></li>
                  </nav>
                  <p class="copyright"><b>All content developed by cosiiriggz &copy;2017</b></p>
              </div>
          </div>
-     </footer>
-
+</footer>
 <script src="scripts/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="scripts/custom.js"></script>
 </body>
 </html>
