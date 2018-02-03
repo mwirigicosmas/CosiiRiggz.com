@@ -8,8 +8,8 @@ body {
   margin: 0 !important;
   padding: 0 !important;
   border-radius: 0 !important;
-  position: fixed;
-  z-index: 3;
+  position: fixed !important;
+  z-index: 3 !important;
   width: 100%; }
 
 h3 {
