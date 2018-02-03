@@ -7,7 +7,10 @@ body {
 .navbar-inverse {
   margin: 0 !important;
   padding: 0 !important;
-  border-radius: 0 !important; }
+  border-radius: 0 !important;
+  position: fixed;
+  z-index: 3;
+  width: 100%; }
 
 h3 {
   color: #e1c184;
