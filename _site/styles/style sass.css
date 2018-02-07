@@ -10,16 +10,18 @@ body {
   border-radius: 0 !important;
   position: fixed !important;
   z-index: 3 !important;
-  width: 100%; }
+  width: 100% !important; }
 
 h3 {
   color: #e1c184;
   text-align: center;
-  padding: 100px 0 30px 0;
-  margin: 0 auto; }
+  padding-top: 100px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  text-transform: uppercase; }
 
 header {
-  height: 500px;
+  height: 100vh;
   background: url("../images/sho-hatakeyama-117306.jpg") center center;
   background-size: cover;
   width: 100%; }
@@ -30,7 +32,7 @@ header {
     color: white;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    margin-bottom: 20px;
+    margin-top: 70px;
     clear: both;
     padding-top: 100px; }
     header h1 span {
@@ -74,8 +76,9 @@ header {
     order: 5; }
 
 .about-blurb {
+  padding-top: 50px;
+  padding-bottom: 50px;
   max-width: 620px;
-  padding: 15px;
   margin: 0 auto;
   font-size: 24px;
   text-align: center;
@@ -84,8 +87,9 @@ header {
     margin: 0 auto; }
 
 .skill-lockup {
+  padding-bottom: 100px;
   max-width: 540px;
-  margin: 50px auto;
+  margin: 0 auto;
   color: #ffffff; }
   .skill-lockup:after {
     content: "";
@@ -139,7 +143,8 @@ header {
 
 .thumb-container {
   max-width: 960px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 100px; }
   .thumb-container:after {
     content: "";
     display: block;
@@ -441,38 +446,17 @@ header {
 footer {
   background: url("../images/sho-hatakeyama-117306.jpg") center center;
   background-size: cover; }
-  footer .lockup {
-    padding: 30px 30px 70px 30px; }
-    footer .lockup .logo {
-      height: 50px;
-      width: 50px;
-      float: left; }
-      footer .lockup .logo img {
-        background-size: cover;
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-        opacity: 0.4; }
-  footer nav {
-    padding: 10px; }
-    footer nav li {
-      list-style: none;
-      display: inline-block; }
-      footer nav li a {
-        text-decoration: none;
-        margin-left: 20px;
-        color: rgba(0, 0, 0, 0.5);
-        font-size: 20px;
-        font-weight: 700;
-        text-transform: uppercase; }
-        footer nav li a:hover {
-          color: black; }
-  footer .content-wrap {
-    float: left; }
-    footer .content-wrap .copyright {
-      margin: 0;
-      text-transform: uppercase;
-      font-size: 12px;
-      color: rgba(0, 0, 0, 0.4); }
+
+.copyright {
+  margin: 0;
+  float: left;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: white; }
+
+#up {
+  float: right;
+  font-size: 50px;
+  color: white; }
 
 /*# sourceMappingURL=style%20sass.css.map */
