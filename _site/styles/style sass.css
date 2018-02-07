@@ -22,6 +22,7 @@ h3 {
 
 header {
   height: 100vh;
+  min-height: 100vh;
   background: url("../images/sho-hatakeyama-117306.jpg") center center;
   background-size: cover;
   width: 100%; }
