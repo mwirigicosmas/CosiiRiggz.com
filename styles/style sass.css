@@ -25,6 +25,7 @@ header {
   min-height: 100vh;
   background: url("../images/sho-hatakeyama-117306.jpg") center center;
   background-size: cover;
+  background-attachment: fixed;
   width: 100%; }
   header h1 {
     text-align: center;
